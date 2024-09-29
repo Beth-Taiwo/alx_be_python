@@ -13,9 +13,11 @@ def main():
         if choice.isnumeric(): 
             if choice == '1':
                 # Prompt for and add an item
-                item = input("Enter the item you want to add: ")
+                item = input("Enter the item to add: ")
                 if item.isalpha():
                     shopping_list.append(item)
+                else:
+                    print("Invalid item name. Only alphabetical characters are allowed.")
             elif choice == '2':
                 # Prompt for and remove an item
                 item = input("Enter the item you want to remove: ")
