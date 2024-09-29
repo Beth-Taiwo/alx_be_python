@@ -23,5 +23,5 @@ try:
         converted_temperature = convert_to_celsius(temperature)
         print(f"{temperature}°F is equal to {converted_temperature}°C")
 except ValueError:
-    print("Invalid temperature. Please enter a numeric value")
+    print("Invalid temperature. Please enter a numeric value.")
     exit()
